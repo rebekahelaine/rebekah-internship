@@ -52,6 +52,7 @@
 
 .skeleton-info, .skeleton-id {
   margin: 0 auto;
+  margin-bottom: 0.5em;
 }
 
 .skeleton-id {

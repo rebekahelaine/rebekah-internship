@@ -39,20 +39,22 @@ const NewItems = () => {
             </div>
           </div>
           {loading ? (
-            new Array(4).fill(0).map((_, index) => (
-            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12" key={index}>
-              <div className="nft__item">
-                <div className="author_list_pp">
-                    <div className="skeleton-circle" />
-                    <i className="fa fa-check"></i>
+            <OwlCarousel key="loading" className="owl-theme" loop margin={10} nav responsive={responsiveSettings}>
+              {new Array(4).fill(0).map((_, index) => (
+              <div className="item" key={index}>
+                <div className="nft__item">
+                  <div className="author_list_pp">
+                      <div className="skeleton-circle" />
+                      <i className="fa fa-check"></i>
+                  </div>
+                  <div className="skeleton-box nft__item_wrap" />
+                  <div className="nft__item_info skeleton__title" />
+                  <div className="nft__item_price skeleton__price" />
+                  <div className="nft__item_like skeleton__like" />
                 </div>
-                <div className="skeleton-box nft__item_wrap" />
-                <div className="nft__item_info skeleton__title" />
-                <div className="nft__item_price skeleton__price" />
-                <div className="nft__item_like skeleton__like" />
               </div>
-            </div>
-          ))
+              ))}
+            </OwlCarousel>
           ) : (
           <OwlCarousel 
             className="owl-theme" loop margin={10} nav responsive={responsiveSettings}>
