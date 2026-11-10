@@ -56,7 +56,7 @@ const NewItems = () => {
               ))}
             </OwlCarousel>
           ) : (
-          <OwlCarousel 
+          <OwlCarousel key="loaded"
             className="owl-theme" loop margin={10} nav responsive={responsiveSettings}>
             {newUsers.map((user) => (
             <div className="item" key={user.id}>
