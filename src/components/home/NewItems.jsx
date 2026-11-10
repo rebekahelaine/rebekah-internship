@@ -4,6 +4,8 @@ import AuthorImage from "../../images/author_thumbnail.jpg";
 import nftImage from "../../images/nftImage.jpg";
 import axios from "axios";
 import OwlCarousel from "react-owl-carousel";
+import Countdown from "../UI/Countdown";
+
 
 const responsiveSettings = {
   0: { items: 1 },
@@ -68,8 +70,7 @@ const NewItems = () => {
                     <i className="fa fa-check"></i>
                   </Link>
                 </div>
-                <div className="de_countdown">5h 30m 32s</div>
-
+                {user.expiryDate && <Countdown expiryDate={user.expiryDate} />}
                 <div className="nft__item_wrap">
                   <div className="nft__item_extra">
                     <div className="nft__item_buttons">
