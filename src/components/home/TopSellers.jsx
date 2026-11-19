@@ -45,8 +45,8 @@ const TopSellers = () => {
                 ))  
               ) : (
               tpUsers.slice(0, 12).map((users) => 
-                <li key={users.id}>
-                  <div className="author_list_pp">
+                <li key={users.id} data-aos="fade-in" data-aos-duration="1000">
+                  <div className="author_list_pp"> 
                     <Link to={`/author/${users.authorId}`}>
                       <img
                         className="lazy pp-author"

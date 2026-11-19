@@ -61,7 +61,7 @@ const HotCollections = () => {
             </OwlCarousel>
             ) : (
               <OwlCarousel key="loaded"
-                className="owl-theme" loop margin={10} nav responsive={responsiveSettings}>
+                className="owl-theme" loop margin={10} nav responsive={responsiveSettings} data-aos="fade-up">
                 {users.map((user) => (
                   <div className="item" key={user.id}>
                     <div className="nft_coll">
