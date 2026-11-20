@@ -1,6 +1,5 @@
 import React from "react";
 import NftCard from "../UI/NftCard";
-import Skeleton from "../UI/Skeleton";
 import NftCardSkeleton from "../UI/NftCardSkeleton";
 
 const AuthorItems = ({ author }) => {
